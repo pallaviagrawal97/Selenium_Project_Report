@@ -3,7 +3,6 @@ package agent;
 import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import utils.ConfigLoader;
 import wiring.ProductsPageWiring;
 
 import java.util.List;

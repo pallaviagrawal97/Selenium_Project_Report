@@ -4,7 +4,7 @@ public class ConfigLoader extends PropertiesLoader{
     private static ConfigLoader configurationLoader;
 
     private ConfigLoader() {
-        super("src/main/resources/config.properties");
+        super("src/test/resources/config.properties");
     }
 
 

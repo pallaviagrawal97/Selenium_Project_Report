@@ -1,6 +1,6 @@
 package Base;
 
-import factory.WebDriverFactory;
+import driverFactory.WebDriverFactory;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;

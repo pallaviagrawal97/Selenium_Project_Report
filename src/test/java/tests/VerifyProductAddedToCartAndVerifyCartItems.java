@@ -1,4 +1,4 @@
-package CartTests;
+package tests;
 
 import Base.BaseTest;
 import agent.LoginAgent;
@@ -25,7 +25,7 @@ public class VerifyProductAddedToCartAndVerifyCartItems extends BaseTest {
     @Test(groups = {"functional"},
             attributes = {@CustomAttribute(name="Pallavi")},
             description = "Validate Add To Cart Functionality")
-    public void verifyAllProductsTest(){
+    public void verifyProductAddedToCart(){
         listOfProducts.add(ProductNameEnum.SAUCE_LABS_FLEECE_JACKET.product);
         listOfProducts.add(ProductNameEnum.SAUCE_LABS_BOLT_TSHIRT.product);
 

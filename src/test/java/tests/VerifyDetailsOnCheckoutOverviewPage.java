@@ -1,8 +1,7 @@
-package CartTests;
+package tests;
 
 import Base.BaseTest;
 import agent.LoginAgent;
-import enumeration.ProductNameEnum;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.CustomAttribute;
 import org.testng.annotations.Test;
@@ -17,7 +16,7 @@ public class VerifyDetailsOnCheckoutOverviewPage extends BaseTest {
     private LoginAgent loginPage;
 
     List<String> listOfProducts = new ArrayList<>();
-    protected String testDataPath = "src/main/resources/test-data/";
+    protected String testDataPath = "test-data/";
     private UserRecord record = JSONUtils.getData(testDataPath+"userDetails1.json", UserRecord.class);
 
 
@@ -29,7 +28,7 @@ public class VerifyDetailsOnCheckoutOverviewPage extends BaseTest {
     @Test(groups = {"functional"},
             attributes = {@CustomAttribute(name="Pallavi")},
             description = "Validate End to End Checkout Functionality")
-    public void verifyAllProductsTest(){
+    public void verifyE2ECheckoutCart(){
         listOfProducts.add(record.product1());
         listOfProducts.add(record.product2());
 

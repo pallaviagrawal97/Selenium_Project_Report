@@ -1,7 +1,6 @@
 package wiring;
 
-import agent.ProductsAgent;
-import base.BasePage;
+import Base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,8 +8,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.List;
-
-import static utils.Commons.logsReporter;
 
 public class CartPageWiring extends BasePage {
     public CartPageWiring(WebDriver driver) {

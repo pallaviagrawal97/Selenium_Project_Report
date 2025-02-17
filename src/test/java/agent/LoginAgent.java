@@ -5,6 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import utils.ConfigLoader;
 import wiring.LoginPageWiring;
+
 import static utils.Commons.logsReporter;
 
 public class LoginAgent extends LoginPageWiring {

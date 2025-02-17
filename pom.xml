@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.sample.docerized.extentReport</groupId>
-    <artifactId>Selenium_Project_Report</artifactId>
+    <artifactId>Dockerized_Webdriver_ExtentReport</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -94,14 +94,14 @@
                 <version>${maven.surefire.version}</version>
                 <configuration>
                     <systemPropertyVariables>
-                    <browser>chrome</browser>
-                    <selenium.grid.enabled>false</selenium.grid.enabled>
-                </systemPropertyVariables>
-                <suiteXmlFiles>
-                    <file>src/test/java/functional.xml</file>
-                </suiteXmlFiles>
-                <threadCount>1</threadCount>
-                <!--<reportsDirectory>reports/tests-output</reportsDirectory>-->
+                        <browser>firefox</browser>
+                        <selenium.grid.enabled>false</selenium.grid.enabled>
+                    </systemPropertyVariables>
+                    <suiteXmlFiles>
+                        <file>src/test/resources/test-suites/functional.xml</file>
+                    </suiteXmlFiles>
+                    <threadCount>1</threadCount>
+                    <!--<reportsDirectory>reports/tests-output</reportsDirectory>-->
                 </configuration>
             </plugin>
             <!-- To copy all the dependencies to run our tests as part of "mvn package" -->
@@ -158,7 +158,7 @@
                             <outputDirectory>${package.directory}</outputDirectory>
                             <resources>
                                 <resource>
-                                    <directory>src/test/java/saucedemo</directory>
+                                    <directory>src/test/resources</directory>
                                 </resource>
                             </resources>
                         </configuration>

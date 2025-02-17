@@ -43,4 +43,4 @@ java -cp 'libs/*' \
      -Dbrowser="${BROWSER:-firefox}" \
      org.testng.TestNG \
      -threadcount "${THREAD_COUNT:-1}" \
-     "${TEST_SUITE}"
+     test-suites/"${TEST_SUITE}"

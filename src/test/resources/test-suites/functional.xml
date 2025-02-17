@@ -7,17 +7,17 @@
     </listeners>
     <test name="Empty Cart" group-by-instances="true">
         <classes>
-            <class name="CartTests.VerifyCartIsEmptyWhenProductsRemoved"></class>
+            <class name="tests.VerifyCartIsEmptyWhenProductsRemoved"></class>
         </classes>
     </test>
     <test name="Verify Cart items" group-by-instances="true">
         <classes>
-            <class name="CartTests.VerifyProductAddedToCartAndVerifyCartItems"></class>
+            <class name="tests.VerifyProductAddedToCartAndVerifyCartItems"></class>
         </classes>
     </test>
     <test name="Checkout E2E Test" group-by-instances="true">
         <classes>
-            <class name="CartTests.VerifyDetailsOnCheckoutOverviewPage"></class>
+            <class name="tests.VerifyDetailsOnCheckoutOverviewPage"></class>
         </classes>
     </test>
 
