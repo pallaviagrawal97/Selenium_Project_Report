@@ -29,7 +29,7 @@ public class ExtentListeners implements ITestListener {
     @Override
     public void onTestStart(ITestResult result) {
 
-        ExtentTest test = extent.createTest(result.getTestClass().getName())
+        ExtentTest test = extent.createTest(result.getTestClass().getName()+"@TestCase: "+result.getMethod().getMethodName())
                 .info("**** @Test Description: "+result.getMethod().getDescription()+" ****")
                 .assignCategory(result.getMethod().getGroups())
                 .assignAuthor(result.getMethod().getAttributes()[0].name());
