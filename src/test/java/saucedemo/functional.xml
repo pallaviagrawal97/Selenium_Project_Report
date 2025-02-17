@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Current Suite" parallel="tests" thread-count="3">
+    <listeners>
+        <listener class-name="utils.Listners.ExtentListeners"></listener>
+    </listeners>
+    <test name="Empty Cart" group-by-instances="true">
+        <classes>
+            <class name="CartTests.VerifyCartIsEmptyWhenProductsRemoved"></class>
+        </classes>
+    </test>
+    <test name="Verify Cart items" group-by-instances="true">
+        <classes>
+            <class name="CartTests.VerifyProductAddedToCartAndVerifyCartItems"></class>
+        </classes>
+    </test>
+    <test name="Checkout E2E Test" group-by-instances="true">
+        <classes>
+            <class name="CartTests.VerifyDetailsOnCheckoutOverviewPage"></class>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,29 @@
+package wiring;
+
+import base.BasePage;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+
+public class LoginPageWiring extends BasePage {
+
+    @FindBy(xpath = "//input[@name=\"user-name\"]")
+    protected WebElement userName;
+
+    @FindBy(xpath = "//input[@name=\"password\"]")
+    protected WebElement password;
+
+    @FindBy(xpath = "//input[@name=\"login-button\"]")
+    protected WebElement loginButton;
+
+    public LoginPageWiring(WebDriver driver){
+        super(driver);
+    }
+
+    @Override
+    public boolean pageReady() {
+        this.wait.until(ExpectedConditions.visibilityOf(loginButton));
+        return loginButton.isDisplayed();
+    }
+}

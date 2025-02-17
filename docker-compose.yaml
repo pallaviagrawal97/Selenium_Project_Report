@@ -1,0 +1,10 @@
+services:
+  saucedemo:
+    image: agrawalp97/selenium
+    environment:
+      - BROWSER=${BROWSER}
+      - HUB_HOST=hub
+      - THREAD_COUNT=${THREAD_COUNT}
+      - TEST_SUITE=functional.xml
+    volumes:
+      - ./output/saucedemo/Extent/:/home/Selenium_Project_Report/extentReport
