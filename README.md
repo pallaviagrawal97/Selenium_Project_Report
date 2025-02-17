@@ -1,13 +1,14 @@
 ```bash
 ├── Selenium_Project_Report
 │   ├── src
-│   │   ├── main
+│   │   ├── test
 │   ├──     ├── java
 │   │       │    ├── agent
 │   │       │    ├── base
-│   │       │    │   ├── BasePage   
+│   │       │    │   ├── BasePage
+│   │       │    │   ├── BaseTest
 │   │       │    ├── enumeration
-│   │       │    ├── factory
+│   │       │    ├── driverFactory
 │   │       │    │   ├── WebDriverFactory
 │   │       │    ├── record
 │   │       │    ├── utils
@@ -15,17 +16,8 @@
 │   │       │    ├── wiring
 │   │       ├── resources
 │   │       │   ├── test-data
-│   │       │   ├── config.properties
-│   │   ├── test
-│   ├──     ├── java
-│   │       │    ├── Base
-│   │       │    │   ├── BaseTest
-│   │       │    ├── CartTests
-│   │       │    ├── saucedemo
-│   │       │    │   ├── functional.xml
-│   │       │    ├── utils
-│   │       │    │   ├── JSONUtils
-│   │       │    │   ├── ResourceLoader
+│   │       │   ├── test-suites
+│   │       │        ├── functional.xml
 │   ├── pom.xml
 │   ├── Dockerfile
 │   ├── docker-compose.yaml
